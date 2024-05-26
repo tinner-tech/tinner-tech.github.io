@@ -79,6 +79,9 @@ watch -n 1 nvidia-smi
 
 To transfer the generated image from the VPS to your local machine, run this command from your local machine
 ```sh
-scp username@your-vps-ip:/root/stable-diffusion/outputs/txt2img-samples/grid-0001.png /local/path
+scp username@your-vps-ip:/root/stable-diffusion/outputs/txt2img-samples/grid-0000.png /local/path
 ```
+
+each subsequent image generated will increment the grid name. So the second Image will be
+`grid-0001.png`
 
