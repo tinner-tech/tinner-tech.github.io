@@ -2,6 +2,12 @@
 
 This guide will create a Virtual Private Server (VPS) using [vpsai.io](https://vpsai.io) as the provider. You can easily and quickly spin up a VPS AI instance with GPU resources, and the best part is you will only be charged for the resources used. If you terminate the VPS instance before it's expirey date, it will only charge you for the time used. 
 
+## How to Deploy VPS with VPS AI
+
+For the purposes of simplicity, this guide will assume you have connected a wallet to https://cloud-beta.vpsai.io/ and have added credits to your dashboard. If you need more information on how to do these things, please see:
+- [Connecting Your Wallet to the VPS AI Dashboard](https://docs.vpsai.io/vps-ai/product-guides/connecting-your-wallet-to-the-vps-ai-dashboard)
+- [Adding Credit to your VPS AI Dashboard](https://docs.vpsai.io/vps-ai/product-guides/adding-credit-to-your-vps-ai-dashboard)
+
 ```sh
 ssh root@your.vps.ip.address
 ```
