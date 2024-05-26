@@ -21,7 +21,9 @@ To deploy a new GPU-enabled VPS to your dashboard, choose the following settings
 - Operating System: Ubuntu 22.04 + NVIDIA Drivers + Docker
   - The NVIDIA Drivers are important here. They enable us to work with the GPU out of the box wihtout extra setup. 
 
-As you can see, this should cost ~$12 USD for 1 Day (24 Hours) of operation.
+This should cost ~$12 USD for 1 Day (24 Hours) of operation.
+- If you terminate (delete) the VPS from your dashboard before 24 hours, you will only be charged for the time it was active.
+- If you leave the VPS active past 24 hours and you have enough credits in your accout, it will auto-renew it and charge your account.
 
 ```sh
 ssh root@your.vps.ip.address
