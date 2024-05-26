@@ -1,5 +1,7 @@
 # How to Install Stable Diffusion via CLI on Ubuntu 22.04
 
+This guide will create a Virtual Private Server (VPS) using [vpsai.io](https://vpsai.io) as the provider. You can easily and quickly spin up a VPS AI instance with GPU resources, and the best part is you will only be charged for the resources used. If you terminate the VPS instance before it's expirey date, it will only charge you for the time used. 
+
 ```sh
 ssh root@your.vps.ip.address
 ```
