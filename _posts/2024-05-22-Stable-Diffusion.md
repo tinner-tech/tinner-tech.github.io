@@ -25,6 +25,8 @@ This should cost ~$12 USD for 1 Day (24 Hours) of operation.
 - If you terminate (delete) the VPS from your dashboard before 24 hours, you will only be charged for the time it was active.
 - If you leave the VPS active past 24 hours and you have enough credits in your accout, it will auto-renew it and charge your account.
 
+### Accessing Your VPS
+
 ```sh
 ssh root@your.vps.ip.address
 ```
@@ -37,6 +39,8 @@ Are you sure you want to continue connecting
 ```sh
 yes
 ```
+
+### Installing Anaconda
 
 Download the Anaconda installer script from their website and install it. The download URL may change over time
 
@@ -53,22 +57,23 @@ chmod +x Anaconda3-2022.05-Linux-x86_64.sh
 ./Anaconda3-2022.05-Linux-x86_64.sh -b
 ```
 
-Get the model file
+### Downloading the Model file from HuggingFace
 
 ```sh
 wget -O sd-v1-4.ckpt https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt
 ```
 
-Initialise conda, but tell it not to activate each time the shell starts.
+### Initialize Anaconda (conda)
 
 ```sh
 ~/anaconda3/bin/conda config --set auto_activate_base false
 ~/anaconda3/bin/conda init
 ```
 
-You will need to restart your terminal for these changes to take effect. Before moving on, close your current terminal and open a new one.
+> Note: You will need to restart your terminal for these changes to take effect. Before moving on, close your current terminal and open a new one.
 
-Get the Stable Diffusion repository
+
+### Clone the Stable Diffusion Repository
 
 ```sh
 git clone https://github.com/CompVis/stable-diffusion
