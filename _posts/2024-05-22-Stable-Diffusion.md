@@ -1,4 +1,4 @@
-# Stable Diffusion
+# How to Install Stable Diffusion via CLI on Ubuntu 22.04
 
 ```sh
 ssh root@your.vps.ip.address
