@@ -85,3 +85,40 @@ scp username@your-vps-ip:/root/stable-diffusion/outputs/txt2img-samples/grid-000
 each subsequent image generated will increment the grid name. So the second Image will be
 `grid-0001.png`
 
+## Bonus: Disabling the NSFW Safety Checker
+
+To disable the safety checker you need to modify a method in the `txt2img.py` script.
+
+```sh
+nano ./scripts/txt2img.py 
+```
+
+Once in the nano editor, click `ctrl + w` to search. Type `check_safety` and press `Enter`.
+
+It should take you to a method that looks like the following:
+
+```python
+def check_safety(x_image):
+    safety_checker_input = safety_feature_extractor(numpy_to_pil(x_image), return_tensors="pt")
+    x_checked_image, has_nsfw_concept = safety_checker(images=x_image, clip_input=safety_checker_input.pixel_values)
+    assert x_checked_image.shape[0] == len(has_nsfw_concept)
+    for i in range(len(has_nsfw_concept)):
+        if has_nsfw_concept[i]:
+            x_checked_image[i] = load_replacement(x_checked_image[i])
+    return x_checked_image, has_nsfw_concept
+```
+
+you can replace that with the following code:
+
+```python
+def check_safety(x_image):
+    # Returns the images directly without checking for NSFW content
+    return x_image, [False] * len(x_image)  # Assuming no images are flagged NSFW
+
+```
+
+and now any images that are interpreted as NSFW will continue to be generated. 
+
+
+
+
