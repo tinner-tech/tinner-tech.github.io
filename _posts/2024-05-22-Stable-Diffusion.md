@@ -114,8 +114,9 @@ you can replace that with the following code:
 def check_safety(x_image):
     # Returns the images directly without checking for NSFW content
     return x_image, [False] * len(x_image)  # Assuming no images are flagged NSFW
-
 ```
+
+to save and exit the nano editor, click `ctrl + x`, then `y`, and then `Enter`.
 
 and now any images that are interpreted as NSFW will continue to be generated. 
 
