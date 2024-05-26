@@ -2,11 +2,22 @@
 
 This guide will create a Virtual Private Server (VPS) using [vpsai.io](https://vpsai.io) as the provider. You can easily and quickly spin up a VPS AI instance with GPU resources, and the best part is you will only be charged for the resources used. If you terminate the VPS instance before it's expirey date, it will only charge you for the time used. 
 
-## How to Deploy VPS with VPS AI
+## How to Deploy a VPS with VPS AI
 
-For the purposes of simplicity, this guide will assume you have connected a wallet to https://cloud-beta.vpsai.io/ and have added credits to your dashboard. If you need more information on how to do these things, please see:
+For the purposes of simplicity, this guide will assume you have connected a wallet to https://cloud-beta.vpsai.io/, have added credits to your account, and have a valid SSH key added to your dashboard. If you need more information on how to do these things, please see:
 - [Connecting Your Wallet to the VPS AI Dashboard](https://docs.vpsai.io/vps-ai/product-guides/connecting-your-wallet-to-the-vps-ai-dashboard)
 - [Adding Credit to your VPS AI Dashboard](https://docs.vpsai.io/vps-ai/product-guides/adding-credit-to-your-vps-ai-dashboard)
+- [Generate SSH Keys](https://docs.vpsai.io/vps-ai/product-guides/generate-ssh-keys)
+
+### Deploying a new VPS with GPU
+
+Stable Diffusion is a fairly resource-intensive application. In order for your VPS to properly generate images, you will need to be sure to allocate the proper resouces. 
+
+To deploy a new GPU-enabled VPS to your dashboard, choose the following settings. It's possible you could get away with fewer vCPUs and less RAM, but to ensure this works the first time I would recommend the following setup.
+
+<img width="472" alt="vps-summary" src="https://github.com/tinner-tech/tinner-tech.github.io/assets/170574137/5275c241-7e02-4a19-8e73-6d5a0dd3b204">
+
+As you can see, this should cost ~$12 USD for 1 Day (24 Hours) of operation.
 
 ```sh
 ssh root@your.vps.ip.address
