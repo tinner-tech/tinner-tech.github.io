@@ -4,8 +4,8 @@
 ssh root@your.vps.ip.address
 ```
 
-- The authenticity of host '205.252.119.16 (205.252.119.16)' can't be established.
-ED25519 key fingerprint is SHA256:TqTU7YD10q0qvA3/RedXs4+heOT5QqJjMxdLlM348xM.
+- The authenticity of host 'your.vps.ip.address (your.vps.ip.address)' can't be established.
+ED25519 key fingerprint is {unique fingerprint}.
 This key is not known by any other names.
 Are you sure you want to continue connecting
 
