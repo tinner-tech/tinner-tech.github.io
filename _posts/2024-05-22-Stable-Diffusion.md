@@ -14,12 +14,12 @@ For the purposes of simplicity, this guide will assume you have connected a wall
 Stable Diffusion is a fairly resource-intensive application. In order for your VPS to properly generate images, you will need to be sure to allocate the proper resouces. 
 
 To deploy a new GPU-enabled VPS to your dashboard, choose the following settings. It's possible you could get away with fewer vCPUs and less RAM, but to ensure this works the first time I would recommend the following setup.
-    - vCPUs: 6
-    - Memory: 24 GiB
-    - Storage: 168 GiB
-    - GPU: Any Nvidia GPU (I choose the NVIDIA V100)
-    - Operating System: Ubuntu 22.04 + NVIDIA Drivers + Docker
-        - The NVIDIA Drivers are important here. They enable us to work with the GPU out of the box wihtout extra setup. 
+- vCPUs: 6
+- Memory: 24 GiB
+- Storage: 168 GiB
+- GPU: Any Nvidia GPU (I choose the NVIDIA V100)
+- Operating System: Ubuntu 22.04 + NVIDIA Drivers + Docker
+  - The NVIDIA Drivers are important here. They enable us to work with the GPU out of the box wihtout extra setup. 
 
 As you can see, this should cost ~$12 USD for 1 Day (24 Hours) of operation.
 
