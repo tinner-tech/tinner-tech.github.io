@@ -102,11 +102,9 @@ nano ./scripts/txt2img.py
 ```
 In nano, use `ctrl + w` to search for `check_safety`. Replace the found method with:
 ```python
-def check_safety(x
-
-_image):
-    # This code returns images without checking for NSFW content
-    return x_image, [False] * len(x_image)
+def check_safety(x_image):
+    # Returns the images directly without checking for NSFW content
+    return x_image, [False] * len(x_image)  # Assuming no images are flagged NSFW
 ```
 Save and exit nano with `ctrl + x`, then `y`, and `Enter`.
 
