@@ -105,4 +105,4 @@ The script performs the following actions:
 
 This script requires root access to install system packages and configure the environment. Please review the script thoroughly before executing it to ensure it meets your security standards.
 
-The script is Open Source and can be found here: https://github.com/tinner-tech/stable-diffusion-setup.git
+The script is Open Source and can be found here: [tinner-tech/stable-diffusion-setup](https://github.com/tinner-tech/stable-diffusion-setup)
