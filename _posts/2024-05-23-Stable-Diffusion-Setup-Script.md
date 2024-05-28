@@ -95,7 +95,6 @@ scp root@your.vps.ip:/root/stable-diffusion-setup/stable-diffusion/outputs/txt2i
 ## What the Script Does
 
 The script performs the following actions:
-- Updates system packages.
 - Downloads and installs Anaconda.
 - Sets up the Anaconda environment.
 - Clones the Stable Diffusion repository.
@@ -105,14 +104,3 @@ The script performs the following actions:
 ## Security
 
 This script requires root access to install system packages and configure the environment. Please review the script thoroughly before executing it to ensure it meets your security standards.
-
-## Contributing
-
-Contributions to this script are welcome. You can contribute by:
-- Reporting issues
-- Suggesting improvements
-- Submitting pull requests with enhancements
-
----
-
-For any questions or support, please open an issue in this repository.
